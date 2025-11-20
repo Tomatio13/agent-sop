@@ -20,7 +20,8 @@ jobs:
     - name: Run tests
       run: |
         cd python
-        hatch test -c
+        hatch build
+        hatch test
 
   build:
     name: Build distribution 📦
