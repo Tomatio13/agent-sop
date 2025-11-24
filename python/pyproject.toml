@@ -28,7 +28,7 @@ lint-fix = "ruff check --fix ."
 clean = [
     "find . -name '__pycache__' -type d | xargs rm -rf",
     "rm -rf strands_agents_sops/rules",
-    "rm -rf strands_agents_sops/sops", 
+    "rm -rf strands_agents_sops/agent-sops", 
     "rm -rf dist",
     "rm -rf build",
     "rm -rf .pytest_cache",
@@ -53,7 +53,7 @@ include = [
     "strands_agents_sops/skills.py",
     "strands_agents_sops/rules.py",
     "strands_agents_sops/utils.py",
-    "strands_agents_sops/sops/*.md",
+    "strands_agents_sops/agent-sops/*.md",
     "strands_agents_sops/rules/*.md"
 ]
 

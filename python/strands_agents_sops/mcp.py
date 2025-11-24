@@ -50,7 +50,7 @@ def run_mcp_server(sop_paths: str | None = None):
             register_sop(sop["name"], sop["content"], sop["description"])
 
     # Load built-in SOPs last (lower precedence)
-    sops_dir = Path(__file__).parent / "sops"
+    sops_dir = Path(__file__).parent / "agent-sops"
     for md_file in sops_dir.glob("*.sop.md"):
         if md_file.is_file():
             prompt_name = md_file.stem.removesuffix(".sop")

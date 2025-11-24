@@ -8,7 +8,7 @@ class CustomBuildHook(BuildHookInterface):
     def initialize(self, version, build_data):
         # Copy SOPs
         sops_source_dir = Path("../agent-sops")
-        sops_target_dir = Path("strands_agents_sops/sops")
+        sops_target_dir = Path("strands_agents_sops/agent-sops")
 
         sops_target_dir.mkdir(parents=True, exist_ok=True)
 

@@ -27,7 +27,7 @@ def generate_anthropic_skills(output_dir: str, sop_paths: str | None = None):
                 )
 
     # Process built-in SOPs last (lower precedence)
-    sops_dir = Path(__file__).parent / "sops"
+    sops_dir = Path(__file__).parent / "agent-sops"
     for sop_file in sops_dir.glob("*.sop.md"):
         skill_name = sop_file.stem.removesuffix(".sop")
 
